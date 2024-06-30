@@ -1,0 +1,62 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  #resume-preview {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .export-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .export-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+  
+  .template-selection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .template {
+    cursor: pointer;
+  }
+  
+  .template img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+  
+  .template.selected img {
+    border: 2px solid blue;
+  }
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Maker</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Maker</h1>
+    <form id="resume-form">
+      <!-- Personal Information -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+      
+      <label for="contact">Contact Info:</label>
+      <input type="text" id="contact" name="contact"><br>
+      
+      <!-- Professional Summary -->
+      <label for="summary">Professional Summary:</label>
+      <textarea id="summary" name="summary"></textarea><br>
+      
+      <!-- Skills -->
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills"><br>
+      
+      <!-- Education -->
+      <label for="education">Education:</label>
+      <textarea id="education" name="education"></textarea><br>
+      
+      <!-- Experience -->
+      <label for="experience">Experience:</label>
+      <textarea id="experience" name="experience"></textarea><br>
+      
+      <!-- Projects -->
+      <label for="projects">Projects:</label>
+      <textarea id="projects" name="projects"></textarea><br>
+      
+      <!-- Certifications -->
+      <label for="certifications">Certifications:</label>
+      <input type="text" id="certifications" name="certifications"><br>
+      
+      <!-- Languages -->
+      <label for="languages">Languages:</label>
+      <input type="text" id="languages" name="languages"><br>
+      
+      <!-- References -->
+      <label for="references">References:</label>
+      <textarea id="references" name="references"></textarea><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+    
+    <div class="template-selection">
+      <h2>Choose a Template</h2>
+      <div class="template" data-template-id="template1">
+        <img src="templates/template1.png" alt="Template 1">
+      </div>
+      <div class="template" data-template-id="template2">
+        <img src="templates/template2.png" alt="Template 2">
+      </div>
+    </div>
+
+    <div id="resume-preview"></div>
+    
+    <div class="export-buttons">
+      <button id="export-pdf">Export as PDF</button>
+      <button id="export-docx">Export as Docx</button>
+      <button id="export-txt">Export as TXT</button>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
